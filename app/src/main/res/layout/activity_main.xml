@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Obat"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <EditText
+        android:id="@+id/itemCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:hint="Kode Obat"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemCode"
+        android:hint="Nama Obat"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemName"
+        android:hint="Satuan Obat"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemUnit"
+        android:hint="Jumlah Obat"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemAmount"
+        android:hint="Harga Obat"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemPackaging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemPrice"
+        android:hint="Kemasan Obat"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemPackaging"
+        android:hint="Jenis Obat"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/itemExpired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemType"
+        android:hint="Tanggal Kadaluarsa"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:text="simpan"
+        android:layout_below="@id/itemExpired"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
